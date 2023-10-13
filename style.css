@@ -1,49 +1,104 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header {
-    background-color: #3498db;
-    color: #fff;
+.container {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
 }
 
-nav ul {
+.header__title {
+    margin: 0;
+    font-size: 48px;
+}
+
+.header__nav-list {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
-nav li {
+.header__nav-item {
     display: inline;
     margin-left: 20px;
 }
 
-nav a {
+.header__nav-link {
     color: #fff;
     text-decoration: none;
+    transition: border-bottom 0.3s ease;
 }
 
-nav a:hover {
+.header__nav-link:hover {
     border-bottom: 2px solid #fff;
 }
 
-section {
-    padding: 20px;
+.section {
+    padding: 40px 0;
 }
 
-footer {
-    background-color: #333;
+.section--hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
+
+.section--hero .btn {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.section--hero .btn:hover {
+    background-color: #2980b9;
+}
+
+.section--services {
+    background-color: #fff;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.service__icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.service__title {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.section--portfolio {
+    background-color: #f9f9f9;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0
