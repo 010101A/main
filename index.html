@@ -7,24 +7,78 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Benvenuto nel mio sito web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chi siamo</a></li>
-                <li><a href="#">Contattaci</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Benvenuti nel nostro mondo creativo</h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Chi siamo</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Servizi</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Portfolio</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Contattaci</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>Benvenuti nel nostro sito web!</h2>
-        <p>Questo è un esempio di un sito web semplice creato con HTML e CSS.</p>
+    <section class="section section--hero">
+        <div class="container">
+            <h2 class="section__title">Esplora il nostro universo creativo</h2>
+            <p class="section__content">Scopri i servizi eccezionali che offriamo per rendere la tua presenza online unica ed indimenticabile.</p>
+            <a href="#" class="btn btn--primary">Scopri di più</a>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Il Mio Sito Web</p>
+    <section class="section section--services">
+        <div class="container">
+            <h2 class="section__title">I nostri servizi</h2>
+            <div class="service">
+                <div class="service__icon">
+                    <img src="design-icon.png" alt="Icona Design">
+                </div>
+                <h3 class="service__title">Web Design</h3>
+                <p class="service__content">Creiamo design accattivanti e moderni per il tuo sito web, adattati a tutte le dimensioni dei dispositivi.</p>
+            </div>
+            <div class="service">
+                <div class="service__icon">
+                    <img src="seo-icon.png" alt="Icona SEO">
+                </div>
+                <h3 class="service__title">SEO Ottimizzato</h3>
+                <p class="service__content">Ottimizziamo il tuo sito web per i motori di ricerca per massimizzare la visibilità online e il traffico.</p>
+            </div>
+            <div class="service">
+                <div class="service__icon">
+                    <img src="ecommerce-icon.png" alt="Icona E-commerce">
+                </div>
+                <h3 class="service__title">E-commerce</h3>
+                <p class="service__content">Realizziamo piattaforme di e-commerce avanzate per aiutarti a vendere i tuoi prodotti online in modo efficace.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--portfolio">
+        <div class="container">
+            <h2 class="section__title">Il nostro Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Progetto 1">
+                <h3 class="portfolio-item__title">Progetto 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Progetto 2">
+                <h3 class="portfolio-item__title">Progetto 2</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="project3.jpg" alt="Progetto 3">
+                <h3 class="portfolio-item__title">Progetto 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2023 Il Mio Sito Web</p>
+        </div>
     </footer>
 </body>
 </html>
